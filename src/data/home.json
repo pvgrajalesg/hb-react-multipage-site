@@ -1,6 +1,6 @@
 {
-  "usuario":{
-    "nombre": "Carlos",
-    "apellido": "Alvarez"
+  "user":{
+    "name": "Carlos",
+    "lastName": "Alvarez"
   }
 }
