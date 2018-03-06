@@ -1,6 +1,95 @@
 {
-  "user":{
-    "name": "Carlos",
-    "lastName": "Alvarez"
+  "heroContent":{
+    "header": "",
+    "description": "Description hero content",
+    "cta": {
+      "label": "Learn more",
+      "url": ""
+    },
+    "images": {
+      "small": {
+        "url": "./assets/hero-small.jpg",
+        "description": "imagen for devices small"
+      },
+      "medium": {
+        "url": "./assets/hero-medium.jpg",
+        "description": "imagen for devices medium"
+      },
+      "large": {
+        "url": "./assets/hero-large.jpg",
+        "description": "imagen for devices large"
+      }
+    }
+  },
+  
+  "heroDecorative":{
+    "header": "",
+    "description": "Description hero content",
+    "cta": {
+      "label": "",
+      "url": ""
+    },
+    "images": {
+      "small": {
+        "url": "./assets/hero-small.jpg"
+      },
+      "medium": {
+        "url": "./assets/hero-medium.jpg"
+      },
+      "large": {
+        "url": "./assets/hero-large.jpg"
+      }
+    }
+  },
+
+  "mainNav": {
+    "logo": {
+      "img": "./assets/logo.png",
+      "link": "index.html"
+    },
+    "links": [
+      {
+        "label": "Telefono",
+        "href": ""
+      },
+      {
+        "label": "Internet",
+        "links": [
+          {
+            "label": "SmartWifi1",
+            "href": ""
+          },
+          {
+            "label": "SmartWifi2",
+            "href": ""
+          },
+          {
+            "label": "SmartWifi3",
+            "href": ""
+          }
+        ]
+      },
+      {
+        "label": "Celular",
+        "href": ""
+      },
+      {
+        "label": "Tv",
+        "links": [
+          {
+            "label": "TV1",
+            "href": ""
+          },
+          {
+            "label": "TV2",
+            "href": ""
+          },
+          {
+            "label": "TV3",
+            "href": ""
+          }
+        ]
+      }
+    ]
   }
 }
