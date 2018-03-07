@@ -3,7 +3,6 @@ import React, {Fragment} from 'react'
 import Button from './Button'
 
 export default function Dropdown (props) {
-  console.log(props.inks)
   return (
     <Fragment>
       <div>
@@ -13,7 +12,7 @@ export default function Dropdown (props) {
       <div>
         {props.links.map(({label, href}) => {
           return (
-            <Button label={label} href={href} />
+            <Button key={label} label={label} href={href} />
           )
         })
       }

@@ -1,0 +1,65 @@
+ @import './../shared/utils';
+ @import './../shared/variables';
+
+$menuBackgroundColor: #ffffff;
+$menuMainColor: #000000;
+
+.main-nav-menu__list{
+	position: absolute;
+	background-color: lighten($menuMainColor, 30%);
+	width: 100%;
+	height: 100%;
+	//visibility: hidden;
+
+	&__item{
+		width: 100%;
+		height: 40px;
+		justify-content: center;
+		display: inline-block;
+		text-align: center;
+		align-items: center;
+		margin-top: 10px;
+
+		@include large-screen{
+			z-index: 1;
+		}
+
+	}
+
+	&--opened{
+		height: 100%;
+		visibility: visible;
+		z-index: 1;
+	}
+
+	@include large-screen{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		height: 40px;	
+		background-color: $menuBackgroundColor;
+		visibility: visible;
+	}
+
+	&__item-button{
+		background:none;
+		border:none;
+		font-size:1em;
+		color: $letterColor;
+		font-family: $contentFont;
+
+		@include large-screen{
+			color: black;
+		}
+	}
+
+	&__item-menu {
+		width: 100%;
+		display: block;
+		text-align: center;
+		visibility: hidden;
+	}
+
+}
