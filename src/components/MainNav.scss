@@ -1,0 +1,24 @@
+@import './../shared/utils';
+@import './../shared/variables';
+
+$menuBackgroundColor: #ffffff;
+$menuMainColor: #000000;
+
+.main-nav{
+	width: 100vw;
+	height: 20%;
+
+	&-container{
+		width: 100%;
+		height: 100%;
+		background-color: $menuBackgroundColor;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&-menu{
+		width: 100%;
+		height: 50%;
+	}
+}

@@ -1,0 +1,78 @@
+@import './../shared/utils';
+@import './../shared/variables';
+
+$menuBackgroundColor: #ffffff;
+$menuMainColor: #000000;
+
+.main-nav-container__button{
+		display: flex;
+		align-items: center;
+		width: 20%;
+		height: 100%;
+		padding: 0 20px;
+		position: relative;
+
+		@include large-screen{
+			display: none;
+		}
+
+		&-closed {
+			display: block;
+			width: 40px;
+			height: 40px;
+			border-radius: 2px;
+			background: darken($menuBackgroundColor, 5%);
+
+			&--line {
+				display: block;
+				height: 2px;
+				width: 100%;
+				background: $menuMainColor;		
+		
+				&::before,
+				&::after {
+					display: block;
+					content: '';
+					height: 2px;
+					width: 100%;
+					background: $menuMainColor;
+					position: relative;
+				}
+		
+				&::before {
+					top: -6px;
+				}
+		
+				&::after {
+					bottom: -4px;
+				}
+			}
+
+			&--cross{
+				position: relative;
+  			display: inline-block;
+  			width: 30px;
+  			height: 30px;
+  			overflow: hidden;
+
+  			&::before, &::after {
+    			content: '';
+    			position: absolute;
+    			height: 2px;
+    			width: 100%;
+    			top: 50%;
+    			left: 0;
+    			margin-top: -2px;
+    			background: $menuMainColor;
+  			}
+
+  			&::before {
+    			transform:rotate(45deg);
+  			}
+  			
+  			&::after {
+    			transform:rotate(-45deg);
+  			}
+			}	
+		}
+	}

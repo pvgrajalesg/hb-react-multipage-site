@@ -5,10 +5,11 @@ import Dropdown from './Dropdown'
 
 import './List.scss'
 
-export default function List ({data}) {
+export default function List (props) {
+  console.log(props.state)
   return (
-    <ul className='main-nav-menu__list'>
-      {data.links.map(({label, href, links}) => {
+    <ul className= { props.state ? 'main-nav-menu__list--opened' : 'main-nav-menu__list'} >
+      {props.links.map(({label, href, links}) => {
         return (
           <li key={label} className='main-nav-menu__list__item'>
             {links
