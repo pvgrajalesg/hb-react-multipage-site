@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './List.scss'
+
 export default function Button (props) {
   return (
     <a href={props.href} >

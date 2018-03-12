@@ -20,5 +20,11 @@ $menuMainColor: #000000;
 	&-menu{
 		width: 100%;
 		height: 50%;
+		background-color: lighten($menuMainColor, 30%);
+	
+		@include large-screen{
+			background-color: white;
+		}
+
 	}
 }

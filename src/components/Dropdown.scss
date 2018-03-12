@@ -1,0 +1,28 @@
+@import './../shared/utils';
+@import './../shared/variables';
+
+$menuBackgroundColor: #ffffff;
+$menuMainColor: #000000;
+
+.main-nav-menu__list__item-dropdown{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	&__arrow {
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid $menuMainColor;
+	}
+
+	&--opened a {
+		display: block;
+		visibility: visible;
+
+		@include large-screen{
+			background-color: $menuBackgroundColor;
+			min-width: 160px;
+		}
+	}
+}
