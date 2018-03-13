@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './List.scss'
+import './../List/List.scss'
 
 export default function Button (props) {
   return (
